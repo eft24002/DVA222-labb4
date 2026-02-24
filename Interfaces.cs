@@ -5,6 +5,7 @@ namespace SlidingPuzzleGame
     public interface ITile
     {
         bool IsEmpty { get; }
+        void Render(int width);
     }
 
     public interface IGameBoard<TTile> where TTile : ITile

@@ -32,18 +32,4 @@ namespace SlidingPuzzleGame
             return true;
         }		 
     }
-
-    // En klass för färger som en ovan 
-    /*public class ColorBoard : GameBoard<ColorTile>
-    {
-        public ColorBoard(int size) : base(size)
-        {
- 
-        }
-
-        public override bool Win()
-        {
-
-        }		 
-    }*/
 }

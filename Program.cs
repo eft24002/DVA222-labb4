@@ -1,8 +1,9 @@
 using System;
 using SlidingPuzzleGame;
 
+
 // Program entry point
-class Program
+ class Program
 {
     public static void Main(string[] args)
     {
@@ -15,16 +16,18 @@ class Program
         {
             // create a random 3x3 to 5x5 sliding puzzle
             var board = new NumberBoard(rnd.Next(3, 6));
-            var renderer = new NumberBoardRenderer();
+            var renderer = new BoardRenderer<NumberTile>();
             var game = new Game<NumberTile>(board, renderer, "Slide the numbered tiles until they appear in ascending order with the empty space in the final position.");
             game.Play(Game<NumberTile>.DifficultyLevel.Normal);
         }
-        /*else if(choice == 2)
+        else if(choice == 2)
         {
             // create a random 3x3 to 5x5 sliding puzzle
             var g = new ColorBoard(rnd.Next(3, 6));
-            g.Game.Play(ColorBoard.DifficultyLevel.Normal);
-        }*/
+            var renderer = new BoardRenderer<ColorTile>();
+            var game = new Game<ColorTile>(g, renderer, "Slide the colored tiles until they appear in ascending order with the empty space in the final position.");
+            game.Play(Game<ColorTile>.DifficultyLevel.Normal);
+        }
         else
         {
             Console.WriteLine("Wrong input:(");
