@@ -1,5 +1,6 @@
 using System;
 
+
 namespace SlidingPuzzleGame
 {
     public abstract class GameBoard<TTile> : IGameBoard<TTile> where TTile : ITile    

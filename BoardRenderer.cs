@@ -1,5 +1,6 @@
 using System;
 
+
 namespace SlidingPuzzleGame
 {
     public class BoardRenderer<T> : IBoardRenderer<T> where T : ITile

@@ -1,7 +1,6 @@
 using System;
 using SlidingPuzzleGame;
 
-
 // Program entry point
  class Program
 {

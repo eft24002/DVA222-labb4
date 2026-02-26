@@ -1,3 +1,4 @@
+
 namespace SlidingPuzzleGame
 {
     public class NumberBoard : GameBoard<NumberTile>

@@ -1,5 +1,6 @@
 using System.Drawing;
 
+
 namespace SlidingPuzzleGame
 {
     public class ColorBoard : GameBoard<ColorTile>
