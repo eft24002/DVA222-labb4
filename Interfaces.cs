@@ -22,4 +22,9 @@ namespace SlidingPuzzleGame
     {
         void Render(IGameBoard<TTile> board);
     }
+
+    public interface IGame
+    {
+        void Run();
+    }
 }
